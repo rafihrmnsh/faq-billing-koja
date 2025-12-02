@@ -3,13 +3,19 @@
   functions = "netlify/functions"
   publish = "dist/spa"
 
-
 [functions]
   external_node_modules = ["express"]
   node_bundler = "esbuild"
   
+# Redirect API requests to Netlify Functions
 [[redirects]]
   force = true
   from = "/api/*"
   status = 200
   to = "/.netlify/functions/api/:splat"
+
+# Redirect all other traffic to index.html (Required for React Router SPA)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

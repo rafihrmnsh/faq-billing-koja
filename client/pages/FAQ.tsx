@@ -58,10 +58,10 @@ export default function FAQPage() {
             </div>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-            Frequently Asked Questions
+            Billing Frequently Asked Questions 
           </h1>
           <p className="text-koja-100 text-lg mb-8 max-w-2xl mx-auto">
-            Find answers to common questions about our services. Browse our comprehensive knowledge base.
+            Temukan jawaban atas pertanyaan umum seputar billing. Jelajahi basis pengetahuan kami yang lengkap.
           </p>
 
           {/* Search Bar */}

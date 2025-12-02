@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { ChevronDown, Search, HelpCircle } from "lucide-react";
-import { cn, linkify } from "@/lib/utils";
+import { cn, linkify } from "@/lib/utils.tsx";
 import { faqService, FAQItem } from "../services/faqService";
 
 export default function FAQPage() {
